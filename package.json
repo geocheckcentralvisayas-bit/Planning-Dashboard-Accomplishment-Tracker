@@ -1,0 +1,27 @@
+{
+  "name": "emb-r7-planning-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "sync:live": "python scripts/sync_live_data.py",
+    "watch:live": "python scripts/watch_live_data.py",
+    "sync:graph": "python scripts/graph_live_data.py",
+    "hash-password": "python scripts/hash_password.py"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
